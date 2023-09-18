@@ -1,0 +1,86 @@
+<div>
+  <main>
+    <section>
+      <div><h1>{{name}}</h1></div>
+      <ol>{{description}}</ol>
+      {{#with history}}
+        <ol>{{year}} , {{founder}}.</ol>
+      {{/with}}
+    </section>
+
+    <section>
+      <div>
+        <caption>
+          <ul>{{types}}</ul>
+        </caption>
+      </div>
+    </section>
+    <hr />
+    <br />
+
+    <section>
+        {{>title data="Syntax"}}
+        <div>
+            {{#with syntax}}
+            {{#each variables}}{{/each}}
+            <li><b>Variables:</b>{{variables}}</li>
+            {{#each functions}}{{/each}}
+            <li><b>Functions:</b>{{functions}}</li>
+            {{#each conditionals}}{{/each}}
+            <li><b>Conditionals:</b>{{conditionals}}</li>
+            {{#each loops}}{{/each}}
+            <li><b>Loops:</b>{{loops}}</li>
+            {{#each classes}}{{/each}}
+            <li><b>Classes:</b>{{classes}}</li>
+            <button type="button" class="btn btn-primary">Primary</button>
+            {{/with}}
+            <hr>
+            <br>
+
+            <section>
+                <div>
+                   <em>{{features}}</em>
+                </div>
+            </section>
+            <hr>
+            <br>
+
+            <section>
+                <div>
+                    <caption>
+                        <b>{{libraries}}</b>
+                        <button type="button" class="btn btn-success">Success</button>
+                    </caption>
+                </div>
+            </section>
+            <hr>
+            <br>
+
+
+            <section>
+                <div>
+                    <b>{{tools}}</b>
+                    <button type="button" class="btn btn-info">Info</button>
+                </div>
+            </section>
+            <hr>
+            <br>
+
+            <section>
+                {{>title data="Community"}}
+                <div>
+                    {{#each community}}
+                    <li><b>Name:</b>{{name}}</li>
+                    <li><b>Type</b>{{type}}</li>
+                    <button type="button" class="btn btn-link">Link</button>
+                    {{/each}}
+                </div>
+            </section>
+
+
+
+        </div>
+    </section>
+
+  </main>
+</div>
