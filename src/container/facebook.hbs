@@ -1,0 +1,121 @@
+<div></div>
+  <section>
+    <h1><mark>{{name}}</mark></h1>
+  </section>
+  <ul>{{>title data="Users"}}</ul>
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <div>
+    {{#each users}}
+      <ul>
+        <ol><b>Id:</b>{{id}}</ol>
+        <ol><b>Name:</b>{{name}}</ol>
+        <ol><b>Gender:</b>{{gender}}</ol>
+        <ol><b>Age:</b>{{age}}</ol>
+      </ul>
+      <br>
+      <hr>
+
+      <ul>{{>title data="Friends"}}</ul>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <div>
+        {{#each friends}}
+        <ul>
+            <ol><b>Id:</b>{{id}}</ol>
+            <ol><b>Name:</b>{{name}}</ol>
+            <ol><b>Gender:</b>{{gender}}</ol>
+            <ol><b>Age:</b>{{age}}</ol>
+            <br>
+            <hr>
+
+            {{>title data="Mutual friends"}}
+            <div>
+                {{#each mutual_friends}}
+                <ol><b>Id:</b>{{id}}</ol>
+                <ol><b>Name:</b>{{name}}</ol>
+                <ol><b>Gender:</b>{{gender}}</ol>
+                <ol><b>Age:</b>{{age}}</ol>
+                {{/each}}
+            </div>
+        </ul>
+        {{/each}}
+      </div>
+      <br>
+      <hr>
+
+      <ul>{{>title data="Groups"}}</ul>
+      <button type="button" class="btn btn-link">Link</button>
+      <div>
+        {{#each groups}}
+        <ul>
+            <ol><b>Id:</b>{{id}}</ol>
+            <ol><b>Name:</b>{{name}}</ol>
+            <ol><b>Description:</b>{{description}}</ol> 
+         <br>
+         <hr>
+
+            {{>title data="Members"}}
+            <div>
+                {{#each members}}
+                <ol><b>Id:</b>{{id}}</ol>
+                <ol><b>Name:</b>{{name}}</ol>
+                <ol><b>Gender:</b>{{gender}}</ol>
+                <ol><b>Age:</b>{{age}}</ol>
+                {{/each}}
+            </div>
+            <br>
+            <hr>
+
+            <div>
+               <ul>
+                 <ol><b>Id:</b>{{id}}</ol>
+                 <ol><b>Name:</b>{{name}}</ol>
+                 <ol><b>Description:</b>{{description}}</ol>
+               </ul>
+            </div>
+            <button type="button" class="btn btn-link">Link</button>
+
+                {{>title data="Mutual friends"}}
+                <div>
+                    {{#each mutual_friends}}
+                    <ol><b>Id:</b>{{id}}</ol>
+                    <ol><b>Name:</b>{{name}}</ol>
+                    <ol><b>Gender:</b>{{gender}}</ol>
+                    <ol><b>Age:</b>{{age}}</ol>
+                    {{/each}}
+                </div>
+                <button type="button" class="btn btn-link">Link</button>
+
+                {{>title data="Groups"}}
+                <div>
+                    {{#each groups}}
+                    <ol><b>Id:</b>{{id}}</ol>
+                    <ol><b>Name:</b>{{name}}</ol>
+                    <ol><b>Description:</b>{{description}}</ol>
+                    {{/each}}
+                </div>
+                <button type="button" class="btn btn-link">Link</button>
+
+                {{>title data="Members"}}
+                <div>
+                    {{#each members}}
+                    <ol><b>Id:</b>{{id}}</ol>
+                    <ol><b>Name:</b>{{name}}</ol>
+                    <ol><b>Gender:</b>{{gender}}</ol>
+                    <ol><b>Age:</b>{{age}}</ol>
+                    {{/each}}
+                </div>
+
+                <div>
+                    <ul>
+                        <ol><b>Id:</b>{{id}}</ol>
+                        <ol><b>Name:</b>{{name}}</ol>
+                        <ol><b>Description:</b>{{description}}</ol>
+                    </ul>
+                </div>
+
+           </ul>
+        {{/each}}       
+       </div>
+    {{/each}}
+   </div>
+</div>      
