@@ -1,0 +1,138 @@
+<div class='card'>
+  <div class='card-body'>
+     <div class='card'>
+        <div class='card-body'>
+        {{#with heading}}
+            {{#with main}}
+            <main>
+                <h1 class='taxt-uppercase'>JavaScript</h1>
+                <p>{{text}}</p>
+
+                {{#with button_text}}
+                    <button type="button" class="btn btn-primary">{{solid}}</button>
+                    <br>
+                    <button class='btn btn-outline-primary m-1'>{{outline}}</button>     
+                {{/with}}
+                </div>
+                </div>
+              </main>
+            {{/with}}
+        
+        <br>
+        <br>
+        <br>
+
+           <div class='card'>
+           <div class='card-body'>
+           {{#with second}}
+           <main>
+           <h2 class="text-lowercase">Stack Overflow</h2>
+           <p>{{text}}</p>
+
+           {{#with button_text}}
+           <button class="btn btn-secondary">{{solid}}</button>
+           <br>
+           <button class="btn btn-outline-secondary m-1">{{outline}}</button>
+           {{/with}}
+           </main>
+           {{/with}}
+           </div>
+           </div>
+        <br>
+        <br>
+
+           <div class='card'>
+           <div class='card-body'>
+            {{#with subblock}}
+            <main>
+             <h3 class='text-capitalize'>JavaScript Weekly</h3>
+             <p>{{text}}</p>
+
+             {{#with button_text}}
+             <button class="btn btn-dark">{{solid}}</button>
+             <br>
+             <button class="btn btn-outline-dark m-1">{{outline}}</button>
+             {{/with}}
+             </main>
+            {{/with}}
+           </div>
+           </div>
+        {{/with}}
+  </div>
+</div>
+        
+        <br>
+        <br>
+
+        <div class='card'>
+            <div class='card-body'>
+                {{#with nested_display}}
+                <main>
+                <div class="display-1">HTML</div>
+
+                <div class='card'>
+                <div class='card-body'>
+                    <main>
+                    {{#with children_display}}
+                    <div class='display-4'>Outdated HTML tags</div>
+                    <p>{{text}}</p>
+                    {{#with button}}
+                    <button class="btn btn-outline-warning">{{text}}</button>
+                    {{/with}}
+                    {{/with}}
+                    </main>
+                </div>
+              </div>
+
+              <br>
+
+              <h6>{{header_text}}</h6>
+
+              <br>
+              
+              {{#with button}}
+              <button class="btn btn-info btn-lg">{{text}}</button>
+              {{/with}}
+              </main>
+              {{/with}}
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+         <div class='card'>
+            <div class='card-body'>
+                <main>
+                    {{#with paragraph}}
+                    <div><b>{{title}}</b></div>
+                    <p>{{text}}</p>
+            
+                    <br>
+
+                    {{#with button}}
+                    <div>
+                        <a href="a" class='btn btn-link'>{{text}}</a>
+                        <a href="a" class='btn btn-link'>{{url}}</a>
+                    </div> 
+                    {{/with}}
+                     
+                       <div class='card'>
+                       <div class='card-body'>    
+                        {{#each list_name}}
+                           <div>
+                           <li><a href="a" class='btn btn-link'>{{text}} {{url}}</a></li>
+                           </div>
+                        {{/each}}
+                        </div>
+                        </div>                  
+                        {{/with}}               
+                    </main> 
+                    </div>
+                    </div>  
+                
+
+
+    
+
+            
